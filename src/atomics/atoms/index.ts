@@ -1,2 +1,2 @@
-export * as HIcon from './icon/HIcon.vue';
-export * as HBaseButton from './button/HBaseButton.vue'
+export { default as HIcon } from './icon/HIcon.vue';
+export { default as HBaseButton } from './button/HBaseButton.vue'
