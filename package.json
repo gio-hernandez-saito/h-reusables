@@ -31,6 +31,7 @@
     "vite-plugin-dts": "^3.9.1",
     "vue-tsc": "^2.0.21"
   },
+  "homepage": "https://github.com/gio-hernandez-saito/h-reusables",
   "dependencies": {
     "@vueuse/core": "^10.11.0",
     "vue": "^3.4.29",
