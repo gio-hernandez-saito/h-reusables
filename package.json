@@ -1,6 +1,6 @@
 {
   "name": "h-reusables",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "type": "module",
   "keywords": [
     "atomics",
@@ -11,23 +11,21 @@
   ],
   "author": "Hyeonsik Gong",
   "description": "Reusable Library Collections.",
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/h-reusables.js",
       "require": "./dist/h-reusables.umd.cjs"
-    }
+    },
+    "./dist/style.css": "./dist/style.css"
   },
   "scripts": {
     "build": "vite build",
     "watch": "vite build --watch",
     "prepare": "npm run build"
   },
-  "files": [
-    "dist",
-    "src"
-  ],
+  "files": ["dist"],
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.8.0",
