@@ -1,14 +1,14 @@
 import { BaseProps, SVGIcon } from "@/types/global";
 
-export interface IconsPair {
-  [icon: string]: SVGIcon;
+export type IconsPair<IconName extends string = string> = {
+  [icon in IconName]?: SVGIcon;
 }
 
-export interface HIconProps<Icons extends Record<string, SVGIcon>> {
-  icons: Icons
-  icon: keyof Icons,
+export interface HIconProps<IconName extends string = string> {
+  icons: IconsPair<IconName>
+  icon: IconName;
 }
 
 export interface HIconWrapperProps extends BaseProps {
-  iconProps: HIconProps<IconsPair>
+  iconProps: HIconProps
 }

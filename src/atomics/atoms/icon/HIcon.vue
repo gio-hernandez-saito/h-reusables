@@ -8,11 +8,12 @@
 <script lang="ts" setup>
 import { watch } from 'vue'
 import { SVGIcon } from "@/types/global";
-import { HIconProps, IconsPair } from "@/types/atomics/atoms/icon/HIcon";
+import { HIconProps } from "@/types/atomics/atoms/icon/HIcon";
 
-const props = defineProps<HIconProps<IconsPair>>()
+const props = defineProps<HIconProps>()
+const undefinedIcon = { viewBox: '0 0 20 20', path: '' }
 let svgIcon: SVGIcon
 
-watch(() => props, () => svgIcon = props.icons[props.icon], { immediate: true, deep: true })
+watch(() => props, () => svgIcon = props.icons[props.icon] ?? undefinedIcon, { immediate: true, deep: true })
 
 </script>

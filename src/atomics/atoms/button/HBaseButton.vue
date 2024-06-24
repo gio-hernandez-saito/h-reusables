@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-between px-3">
+  <div class="w-fit flex items-center justify-start px-3 h-full">
     <template v-if="preIcon">
       <h-icon-wrapper v-bind="preIcon"/>
     </template>
