@@ -1,3 +1,4 @@
+export { useBase } from './use-base';
 export { useDisclosure } from './use-disclosure';
 export { useLastPrevious } from "./use-last-previous";
 export { useMultipleDebounced } from "./use-multiple-debounced";
