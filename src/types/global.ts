@@ -3,7 +3,7 @@ export interface SVGIcon {
   viewBox?: string;
 }
 
-export interface PropBase {
+export interface BaseProps {
   cls?: string;
   styles?: Partial<CSSStyleDeclaration>;
 }
