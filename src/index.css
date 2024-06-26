@@ -1,0 +1,14 @@
+.h-hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.h-hide-scrollbar::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.h-space {
+    flex: 1
+}
