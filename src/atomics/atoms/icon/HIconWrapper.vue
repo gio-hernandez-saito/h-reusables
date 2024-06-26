@@ -1,5 +1,5 @@
 <template>
-  <h-base :cls="cls" :styles="styles" class="flex-none">
+  <h-base :cls="cls" :styles="styles" class="flex-none flex flex-nowrap flex-row items-center justify-center w-full h-full">
     <h-icon v-bind="iconProps"/>
   </h-base>
 </template>

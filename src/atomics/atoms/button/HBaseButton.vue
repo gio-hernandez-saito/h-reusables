@@ -1,5 +1,6 @@
 <template>
-  <div class="w-fit flex items-center justify-start px-3 h-full">
+  <button :class="myClass" :disabled="props.disabled ?? false" tabindex="-1"
+          class="w-fit transition ease-in-out duration-100 flex items-center">
     <template v-if="preIcon">
       <h-icon-wrapper v-bind="preIcon"/>
     </template>
@@ -11,11 +12,13 @@
     <template v-if="postIcon">
       <h-icon-wrapper v-bind="postIcon"/>
     </template>
-  </div>
+  </button>
 </template>
 <script lang="ts" setup>
 import { HBaseButtonProps } from "@/types/atomics/atoms/button/HButton";
 import HIconWrapper from "@/atomics/atoms/icon/HIconWrapper.vue";
+import { computed } from "vue";
 
-defineProps<HBaseButtonProps>()
+const props = withDefaults(defineProps<HBaseButtonProps>(), { disabled: false })
+const myClass = computed(() => props.cls ?? '')
 </script>
