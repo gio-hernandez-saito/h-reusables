@@ -5,7 +5,7 @@
       <h-icon-wrapper v-bind="preIcon"/>
     </template>
     <template v-if="text">
-      <div class="mx-1 whitespace-nowrap overflow-hidden text-ellipsis">
+      <div class="whitespace-nowrap overflow-hidden text-ellipsis">
         {{ text }}
       </div>
     </template>
