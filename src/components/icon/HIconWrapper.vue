@@ -5,9 +5,9 @@
 </template>
 
 <script lang="ts" setup>
-import { HIconWrapperProps } from "@/types/atomics/atoms/icon/HIcon";
-import { HIcon } from "@/atomics";
-import HBase from "@/atomics/atoms/HBase.vue";
+import { HIconWrapperProps } from "@/types/components/icon/HIcon";
+import { HIcon } from "@/components";
+import HBase from "../patterns/HBase.vue";
 
 defineProps<HIconWrapperProps>()
 </script>

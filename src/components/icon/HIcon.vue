@@ -8,7 +8,7 @@
 <script lang="ts" setup>
 import { watch } from 'vue'
 import { SVGIcon } from "@/types/global";
-import { HIconProps } from "@/types/atomics/atoms/icon/HIcon";
+import { HIconProps } from "@/types/components/icon/HIcon";
 
 const props = defineProps<HIconProps>()
 const undefinedIcon = { viewBox: '0 0 20 20', path: '' }
